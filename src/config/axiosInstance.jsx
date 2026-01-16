@@ -1,9 +1,16 @@
 import axios from "axios";
 
+// export const axiosInstance = axios.create({
+//   baseURL: "http://localhost:4000/api",
+//   withCredentials: true,
+// });
+
+
 export const axiosInstance = axios.create({
-  baseURL: "http://localhost:4000/api",
+  baseURL: import.meta.env.VITE_API_URL,
   withCredentials: true,
 });
+
 
 // axiosInstance?.interceptors?.response?.use(
 //   (response) => response,
