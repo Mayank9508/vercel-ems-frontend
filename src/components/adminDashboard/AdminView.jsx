@@ -8,6 +8,7 @@ import {
   FaTimesCircle,
   FaUsers,
 } from "react-icons/fa";
+import { axiosInstance } from "../../config/axiosInstance";
 
 const AdminView = () => {
   const [data, setData] = useState(null);
@@ -15,8 +16,8 @@ const AdminView = () => {
 
   const fetchDashboard = async () => {
     try {
-      const res = await axios.get(
-        "http://localhost:4000/api/dashboard",
+      const res = await axiosInstance.get(
+        "/dashboard",
         { withCredentials: true }
       );
       setData(res.data.data);
