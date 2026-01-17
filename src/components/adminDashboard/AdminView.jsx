@@ -33,6 +33,7 @@ const AdminView = () => {
   }, []);
 
   if (loading) return <p className="text-center">Loading...</p>;
+  if (!data) return <p className="text-center">Failed to load dashboard</p>;
 
   return (
     <div className="p-6 ">
