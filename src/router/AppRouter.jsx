@@ -36,6 +36,7 @@ const AppRouter = () => {
 
       if (res) {
         dispatch(setUser(res.data.user));
+        dispatch(setAuthChecked());
       }
     } catch (error) {
       console.log("API ERROR", error.response?.data);

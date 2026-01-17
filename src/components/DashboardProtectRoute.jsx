@@ -5,6 +5,10 @@ const DashboardProtectRoute = () => {
   const { user } = useSelector((state) => state.auth);
   const location = useLocation();
 
+  if (!authChecked) {
+    return <Loading />; // ya null
+  }
+
   if (!user) {
     return <Navigate to="/" replace />;
   }
