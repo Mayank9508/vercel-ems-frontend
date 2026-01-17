@@ -42,6 +42,7 @@ const AppRouter = () => {
       console.log("API ERROR", error.response?.data);
       console.log("STATUS", error.response?.status);
       dispatch(removeUser());
+      dispatch(setAuthChecked());
       // console.log(error.message);
     }
   };
