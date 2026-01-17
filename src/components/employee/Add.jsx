@@ -196,7 +196,7 @@ const Add = () => {
               {...register("department", { required: "Gender is required" })}
             >
               <option value="">Seletc Department</option>
-              {departmentsData.map((dep) => {
+              {Array.isArray(departmentsData) && departmentsData.map((dep) => {
                 return (
                   <option key={dep._id} value={dep._id}>
                     {dep.dep_name}
