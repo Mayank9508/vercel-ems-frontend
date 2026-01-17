@@ -7,7 +7,7 @@ import DashboardProtectRoute from "../components/DashboardProtectRoute";
 import AuthProtectRoute from "../components/AuthProtectRoute";
 import { axiosInstance } from "../config/axiosInstance";
 import { useDispatch } from "react-redux";
-import { removeUser, setUser } from "../features/auth/AuthSlice";
+import { removeUser, setAuthChecked, setUser } from "../features/auth/AuthSlice";
 import AdminView from "../components/adminDashboard/AdminView";
 import DepartmentList from "../components/departments/DepartmentList";
 import AddDepartment from "../components/departments/AddDepartment";

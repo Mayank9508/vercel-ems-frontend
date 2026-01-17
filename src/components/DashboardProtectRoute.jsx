@@ -3,6 +3,7 @@ import { Navigate, Outlet, useLocation } from "react-router";
 
 const DashboardProtectRoute = () => {
   const { user } = useSelector((state) => state.auth);
+  const { authChecked } = useSelector((state) => state.auth);
   const location = useLocation();
 
   if (!authChecked) {
