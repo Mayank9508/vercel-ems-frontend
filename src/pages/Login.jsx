@@ -17,7 +17,7 @@ const Login = () => {
 
   const formSubmit = async (data) => {
     try {
-      const res = await axiosInstance.post("auth/login", data);
+      const res = await axiosInstance.post("/auth/login", data);
 
       if (res.data.success) {
         alert("Successfully login");
