@@ -14,7 +14,6 @@ import {
 const AdminSidebar = () => {
   return (
     <div className="bg-linear-to-b from-slate-800 to-slate-900 text-gray-200 h-screen fixed left-0 top-0 bottom-0 w-70">
-      
       {/* Logo */}
       <div className="flex items-center justify-center h-12 text-white text-2xl  tracking-wide bg-teal-600 shadow-md">
         OfficeSetu
@@ -113,7 +112,7 @@ const AdminSidebar = () => {
           <span className="font-medium">Setting</span>
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           to="/dashboard/admin/attendence"
           className={({ isActive }) =>
             `flex items-center space-x-4 py-3 px-5 rounded-lg transition-all duration-200
@@ -126,9 +125,9 @@ const AdminSidebar = () => {
         >
           <FaUserCheck />
           <span className="font-medium">Attendence</span>
-        </NavLink>
+        </NavLink> */}
 
-
+        {/* 
         <NavLink
           to="/dashboard/admin/attendence-report"
           className={({ isActive }) =>
@@ -142,7 +141,7 @@ const AdminSidebar = () => {
         >
           <FaFileAlt />
           <span className="font-medium">Attendence Report</span>
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );
